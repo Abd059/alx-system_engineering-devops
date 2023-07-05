@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -ap1 | awk -v ORS=', ' '/\/$/{print $0} !/\.$/ && !/\.\.$/ {print $0} END {print "\n"}'
